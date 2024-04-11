@@ -1,3 +1,5 @@
+# Author: Rasheeque Ahnaf Brinto
+
 #!/usr/bin/env python3
 # serve.py
 
@@ -35,7 +37,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             <title>Live Data - rbrinto</title>
             <style>
                 body {{
-                    background-color:  #010101; /* #1b33aa; Very dark green background */
+                    background-color:  #010101; /* #1b33aa; Very dark background */
                     color: #ffffff; /* White text */
                     font-family: Arial, sans-serif;
                     margin: 0;
@@ -46,7 +48,7 @@ class RequestHandler(BaseHTTPRequestHandler):
                     max-width: 600px;
                     margin: 50px auto;
                     padding: 20px;
-                    background-color: #1a511a; /* Dark green box background */
+                    background-color: #1a511a; /* Dark green box */
                     box-shadow: 0 8px 16px rgba(72, 227, 20, 1.0); /* Box shadow */
                     transition: box-shadow 0.6s;
                     overflow: auto; /* Enable scrolling if content exceeds container */
