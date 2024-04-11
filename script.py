@@ -31,10 +31,10 @@ def get_ping_time(ip_address):
             ping_time = "{:06.2f}".format(float(match.group(1))) + " ms"
             return ping_time
         else:
-            return "N/A"  # If ping fails or round-trip time is not found
+            return "Down"  # If ping fails or round-trip time is not found
     
     except subprocess.CalledProcessError as e:
-        return "N/A"  # If ping command fails
+        return "Down"  # If ping command fails
 
 # Function to check the status of predefined devices
 def check_device_status():
@@ -60,8 +60,8 @@ if __name__ == "__main__":
         "Back Window": "192.168.0.15", 
         "Cabin": "192.168.0.13", 
         "Center Console": "192.168.0.12",
-        "Network Router": "192.168.0.1",
-        "Admin Access IP": "192.168.0.3"
+        "Network Router": "192.168.0.1", # not an iot device 
+        "Admin Access IP": "192.168.0.3" # not an iot device
     }
     # Iterate over the predefined device status and print their information
     for device_name, ip_address in device_status.items():
